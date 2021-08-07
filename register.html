@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Register</title>
+<script>
+function ab()
+{
+ var a=confirm("Are You Sure Confirm This Registration..?????");
+if(a==false)
+{
+alert("Sorry!!! Your Registration Is Cancel..");
+return false;
+}
+else
+{
+alert("Registration Succesfull......");
+return true;
+
+}
+}
+</script>
+<style>
+a
+{
+color:blue;
+text-decoration:none;
+font-weight:bold;
+
+margin-top:200px;
+}
+a:hover
+{
+cursor:pointer;
+background:yellow;
+}
+.divheader{
+height:100%;
+width:100%;
+background-image:url('Rail5.jpg');
+color:white;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.button
+{
+ height:30px; 
+ background-color:blue;
+ margin-left:15px;
+ margin-top:30px; 
+ width: 100px;
+ padding:5px;
+ border:1;
+ border-color:black;
+ text-align:center;
+ display:inline-box;
+ border-radius:18px;
+ font-weight:bold;
+ color:white;
+
+
+}
+.button:hover
+{
+cursor:pointer;
+background:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="divheader"  align=center>
+	<h1><font color=purple size=16 ><i>Indian Central Railway</font></h1>
+	
+	<ul>
+<a href="index.html">Home</a> |
+<a href="Aboutus.html">About Us</a> |
+<a href="Contactus.html">Contact Us</a> |
+<a href="">Feed Back</a> |
+<a href="login.html">Admin</a>
+</ul>
+
+
+
+
+
+<h1 style="color:#8A2BE2;margin-top:65px;"><font size="23"><b>Register Here</b></font size></h1>
+<form method="POST" action="registersave.php" onsubmit="return ab()">
+<table align="center"  style="margin-top:50px">
+	
+	<tr>
+		<td> <font size="6" color="Yellow"><b>First Name</font></td>
+		<td><input type="text" name='fname' size=30 required placeholder="Enter the First Name" style="height:30px"></td>
+	</tr>
+	<tr >
+		<td><p  ><font size="6" color="Yellow "><b>Last name</font></b></p></td>
+		<td><input type="text" name='lname' size=30 required placeholder="Enter the Last Name" style="height:30px; "></td>
+	</tr>
+	<tr>
+		<td> <font size="6" color="Yellow"><b>Email Address</font></td>
+		<td><input type="email" name='email' size=30 required placeholder="Enter the Email" style="height:30px"></td>
+	</tr>
+	<tr >
+		<td><p><font size="6" color="Yellow "><b>Password</font></b></p></td>
+		<td><input type="password" name='password' size=30 required placeholder="Enter the Password" style="height:30px; "></td>
+	</tr>
+	<tr>
+		<td> <font size="6" color="Yellow"><b>Contact No.</font></td>
+		<td><input type="text" name='contactno' size=30 required placeholder="Enter the Contact no" style="height:30px"></td>
+	</tr>
+	
+	<tr>
+		<td colspan=2 align=center><input type="submit" name="btnSubmit"  value="Register" class="button"> </td>
+	</tr>
+</table>
+</form>
+</div>
+
+</div>
+
+
+</body>
+</html>

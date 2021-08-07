@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Admin Login</title>
+<style>
+a
+{
+color:blue;
+text-decoration:none;
+font-weight:bold;
+background-color:;
+margin-top:200px;
+}
+a:hover
+{
+cursor:pointer;
+background:yellow;
+}
+.divheader{
+height:100%;
+width:100%;
+background-image:url('10.jpg');
+color:white;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.button
+{
+ height:30px; 
+ background-color:blue;
+ margin-left:15px;
+ margin-top:30px; 
+ width: 100px;
+ padding:5px;
+ border:1;
+ border-color:black;
+ text-align:center;
+ display:inline-box;
+ border-radius:18px;
+ font-weight:bold;
+ color:white;
+
+
+}
+.button:hover
+{
+cursor:pointer;
+background:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="divheader"  align=center>
+	<h1><font color=purple size=16 ><i>Indian Central Railway</font></h1>
+	
+	<ul>
+<a href="index.html">Home</a> |
+<a href="Aboutus.html">About Us</a> |
+<a href="Contactus.html">Contact Us</a> |
+<a href="">Feed Back</a> |
+<a href="login.html">Admin</a>
+</ul>
+
+
+
+
+
+<h1 style="color:#8A2BE2;"><font size="23"><b>Admin Login</b></font size></h1>
+<form method="POST" action="login2.php">
+<table align="center"  style="margin-top:50px">
+	
+	<tr>
+		<td> <font size="6" color="orange"><b>User ID</font></td>
+		<td><input type="text" name='username' size=30 required placeholder="Enter the User ID" style="height:30px"></td>
+	</tr>
+	<tr >
+		<td><p style="margin-top:20px" ><font size="6" color="orange "><b>Password</font></b></p></td>
+		<td><input type="Password" name='password' size=30 required placeholder="Enter the Password" style="height:30px; margin-top:20px "></td>
+	</tr>
+	<tr>
+		<td colspan=2 align=center><input type="submit" name="btnSubmit"  value="Login" class="button"> </td>
+	</tr>
+</table>
+</form>
+</div>
+
+</div>
+
+
+</body>
+</html>
